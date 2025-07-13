@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kundlish Handicraft - Peacock Singhasan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+    }
+    header {
+      background-color: #8e44ad;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    .product-card {
+      background: white;
+      margin: 10px;
+      width: 100%;
+      max-width: 350px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .product-details {
+      padding: 15px;
+      text-align: center;
+    }
+    .price {
+      color: #e67e22;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin-top: 10px;
+    }
+    input[type="text"], input[type="tel"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .buy-btn {
+      background-color: #27ae60;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .buy-btn:hover {
+      background-color: #219150;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      font-size: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 480px) {
+      .product-details {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Kundlish Handicraft</h2>
+  <p>Peacock Design Singhasan Collection for Laddu Gopal</p>
+</header>
+
+<div class="container">
+
+  <!-- Repeat this block for each image -->
+  <div class="product-card">
+    <img src="DSC_0858.jpg" alt="Singhasan 1">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="DSC_0868 (1).jpg" alt="Singhasan 2">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="DSC_0906.jpg" alt="Singhasan 3">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="DSC_0966.jpg" alt="Singhasan 4">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="DSC_0973.jpg" alt="Singhasan 5">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="DSC_0974.jpg" alt="Singhasan 6">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="DSC_0976.jpg" alt="Singhasan 7">
+    <div class="product-details">
+      <h3>Peacock Design Singhasan</h3>
+      <p class="price">Price: ₹599 + ₹71 Shipping</p>
+      <form onsubmit="return handleBuyNow(event)">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="address" placeholder="Full Address" required>
+        <button class="buy-btn" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><strong>Kundlish Handicraft</strong></p>
+  <p>C/o Emax Complex, Nahoni Badholi Road, Ambala (HR) - 133104</p>
+  <p>WhatsApp: <a style="color:#00ff99;" href="https://wa.me/917206287437" target="_blank">7206287437</a></p>
+</footer>
+
+<a class="whatsapp-btn" href="https://wa.me/917206287437" target="_blank">💬</a>
+
+<script>
+  function handleBuyNow(event) {
+    event.preventDefault();
+    alert("Thank you! You will be redirected to payment.");
+    window.open("https://rzp.io/rzp/GMwhgE2", "_blank");
+    return false;
+  }
+</script>
+
+</body>
+</html>
